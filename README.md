@@ -21,12 +21,3 @@ A modern, full-stack Customer Relationship Management (CRM) application designed
 * **Backend:** Node.js, Express.js
 * **Database:** MongoDB
 * **Hosting:** Render (Full-Stack Continuous Deployment)
-
----
-
-## ⚙️ Local Setup & Environment Configuration
-
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/Siri2602/LeadFlow_crm.git](https://github.com/Siri2602/LeadFlow_crm.git)
-cd LeadFlow_crm

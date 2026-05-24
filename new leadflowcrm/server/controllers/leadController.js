@@ -45,6 +45,9 @@ exports.getLeadById = async (req, res) => {
 // POST /api/leads
 exports.createLead = async (req, res) => {
   try {
+    if (!req.body.assignedTo){
+      delete req.body.assignedTo
+    }
     const lead = await Lead.create({ ...req.body });
     await Activity.create({
       action: 'Lead Created',

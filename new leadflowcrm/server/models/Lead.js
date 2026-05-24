@@ -17,7 +17,12 @@ const leadSchema = new mongoose.Schema({
   },
   notes: { type: String },
   followUpDate: { type: Date },
-  assignedTo: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  assignedTo: {
+  type: mongoose.Schema.Types.ObjectId,
+  ref: "User",
+  default: null,
+  required: false
+},
   value: { type: Number, default: 0 },
   priority: { type: String, enum: ['Low', 'Medium', 'High'], default: 'Medium' },
 }, { timestamps: true });
